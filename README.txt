@@ -34,6 +34,11 @@ Soon I will add breakpoint functionality for the following parameters:
 2. right/left channel delay feedback
 3. left/right PANNING (not implemented yet) -> for stereo panning just the delay?
 
+
+
+I left the compiled version of portaudio in a static library
+Its tricky to build so I HOPE it works on your machine? I'm not sure how that works...
+The version I included was compiled on MAC OSX 10.8.2
 =================================================================================
 
 Dan Moore
