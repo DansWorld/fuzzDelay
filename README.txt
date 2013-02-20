@@ -1,10 +1,9 @@
 fuzzDelay README
 ================
 
-Dan Moore
-Berklee College of Music
-dhmoore@berklee.edu
-========================
+fuzzDelay records mono/stereo audio through a delay line and distortion.
+
+========================================================================
 
 Usage:		$ ./fuzzDelay outfile.wav
 
@@ -16,16 +15,28 @@ To compile:
 			 $ make
 
 (NOTE) before compiling, you may want to check
-out the macros at the very top of fuzzDelay.
-You can mess with different effect parameters there :P
-===================================================
+       out the macros at the very top of fuzzDelay.
 
+===================================================
 
 For this small command line app, I wanted to use
 the Portaudio API to build a realtime effect processor.
  
-Learning the API was easy, its the effect design and DSP i know close to nothing about.
+Learning the API was easy, its the effect design and DSP I know close to nothing about.
 
 The distortion algorithm came from Phil Burk in Portaudio documentation.
 The delay algorithm came from Richard Dobson in the APB. (completely explained to my satisfaction)
 
+=================================================================================
+
+Soon I will add breakpoint functionality for the following parameters:
+1. right/left channel delay times -> for variable delay effect (doppler)
+2. right/left channel delay feedback
+3. left/right PANNING (not implemented yet) -> for stereo panning just the delay?
+
+=================================================================================
+
+Dan Moore
+Berklee College of Music
+dhmoore@berklee.edu
+========================
